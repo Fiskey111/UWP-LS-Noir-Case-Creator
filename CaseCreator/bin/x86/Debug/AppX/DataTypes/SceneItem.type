@@ -1,0 +1,84 @@
+{
+  "DataEntry": [
+    {
+      "Label": "Data Type",
+      "SourceType": "CaseManager.CaseData.SceneItem+SceneItemType",
+      "TypeOfInput": 1,
+      "DefaultValue": "",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": [ "Required", "Required" ]
+    },
+    {
+      "Label": "Model",
+      "SourceType": "",
+      "TypeOfInput": 0,
+      "DefaultValue": "",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": null
+    },
+    {
+      "Label": "Scenario",
+      "SourceType": "CaseCreator.Common.Scenarios+ScenarioList",
+      "TypeOfInput": 1,
+      "DefaultValue": "NONE",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": [ "Data Type", "Ped" ]
+    },
+    {
+      "Label": "Animation Dictionary",
+      "SourceType": "",
+      "TypeOfInput": 0,
+      "DefaultValue": "",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": [ "Data Type", "Ped" ]
+    },
+    {
+      "Label": "Animation Name",
+      "SourceType": "",
+      "TypeOfInput": 0,
+      "DefaultValue": "",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": [ "Data Type", "Ped" ]
+    },
+    {
+      "Label": "Blend In Speed",
+      "SourceType": "",
+      "TypeOfInput": 3,
+      "DefaultValue": "3",
+      "MaxSliderValue": 10,
+      "ShowOnLabelOutput": [ "Data Type", "Ped" ]
+    },
+    {
+      "Label": "Animation Flags",
+      "SourceType": "CaseManager.Resources.Animations+AnimationFlags",
+      "TypeOfInput": 1,
+      "DefaultValue": "",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": [ "Data Type", "Ped" ]
+    },
+    {
+      "Label": "Activate When Near",
+      "SourceType": "",
+      "TypeOfInput": 2,
+      "DefaultValue": "False",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": [ "Data Type", "Ped" ]
+    },
+    {
+      "Label": "Is Siren On",
+      "SourceType": "",
+      "TypeOfInput": 2,
+      "DefaultValue": "False",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": [ "Data Type", "Vehicle" ]
+    },
+    {
+      "Label": "Is Siren Silent",
+      "SourceType": "",
+      "TypeOfInput": 2,
+      "DefaultValue": "True",
+      "MaxSliderValue": 0,
+      "ShowOnLabelOutput": [ "Data Type", "Vehicle" ]
+    }
+  ]
+}

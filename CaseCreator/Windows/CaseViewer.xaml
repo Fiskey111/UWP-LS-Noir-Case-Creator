@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="CaseCreator.Windows.CaseViewer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CaseCreator.Windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <CommandBar x:Name="commandBar" IsOpen="True">
+            <AppBarButton x:Name="addItem" Label="Add Item" Icon="Add" Click="AppBarButton_Click" ToolTipService.ToolTip="Add Item" />
+            <AppBarButton x:Name="deleteItem" Label="Delete Item" Icon="Delete" Click="AppBarButton_Click" ToolTipService.ToolTip="Delete Item" />
+            <AppBarButton x:Name="editItem" Label="Edit Item" Icon="Edit" Click="AppBarButton_Click" ToolTipService.ToolTip="Edit Item" />
+            <AppBarButton x:Name="copyItem" Icon="Copy" Label="Copy Item" Click="AppBarButton_Click" ToolTipService.ToolTip="Copy Item" />
+
+            <AppBarSeparator/>
+            <AppBarToggleButton x:Name="enableEditing" Icon="Accept" Label="Enable Editing" Click="AppBarButton_Click" ToolTipService.ToolTip="Enable Editing" />
+
+            <CommandBar.Content>
+                <TextBlock Text="Current Case" Margin="10,10"/>
+            </CommandBar.Content>
+        </CommandBar>
+
+        <TreeView x:Name="caseContent" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,35,10,10" SelectionMode="Single" />
+    </Grid>
+</Page>

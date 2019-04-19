@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="CaseCreator.Windows.LogScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CaseCreator.Windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Activity Log Viewer" FontSize="36" Margin="10,10" />
+        <CheckBox x:Name="debugCheck" Grid.Row="0" Grid.Column="1" Content="Enable Debug Log" Margin="10,10,10,10" IsThreeState="False" Click="DebugCheck_Click"/>
+
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="ScrollView" VerticalScrollBarVisibility="Auto" VerticalAlignment="Stretch" HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollMode="Auto">
+            <TextBlock Name="LogBox" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TextWrapping="NoWrap" />
+        </ScrollViewer>
+    </Grid>
+</Page>
